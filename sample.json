@@ -1,0 +1,16 @@
+[{
+    "name": "Sudhir",
+    "age": 25,
+    "city": "Bangalore",
+    "amount": 1500
+},{
+    "name": "Rahul",
+    "age": 30,
+    "city": "Mumbai",
+    "amount": 2000
+},{
+    "name": "Amit",
+    "age": 28,
+    "city": "Delhi",
+    "amount": 1800
+}]
