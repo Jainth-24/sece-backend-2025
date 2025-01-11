@@ -1,14 +1,20 @@
 var express = require("express");
 const mongoose = require("mongoose");
 const { v4: uuidv4 } = require("uuid");
+const cors =  require('cors')
 
 const app = express();
 //Middleware
 app.use(express.json());
+app.use(cors())
 
-mongoose.connect("mongodb://localhost:27017/expense").then(() => {
-  console.log("connected to database");
-});
+mongoose
+  .connect(
+    "mongodb+srv://jainthasokan185:jainth123@cluster0.axeo981.mongodb.net/expense"
+  )
+  .then(() => {
+    console.log("connected to database");
+  });
 
 const expenseSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
